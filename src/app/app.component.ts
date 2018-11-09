@@ -13,6 +13,12 @@ export class AppComponent {
       content: 'lorem ipsum',
       loveIts: '',
       created_at: ''
+    },
+    {
+      title: 'titre test2',
+      content: 'lorem ipsum2',
+      loveIts: '',
+      created_at: ''
     }
   ];
 }
