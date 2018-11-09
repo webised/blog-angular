@@ -16,7 +16,7 @@ export class AppComponent {
     },
     {
       title: 'titre test2',
-      content: 'lorem ipsum2',
+      content: 'lorem ipsum',
       loveIts: '',
       created_at: ''
     }
