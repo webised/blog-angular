@@ -1,1 +1,13 @@
-{{ title }}
+<div class="row" [ngClass]="{ 'red' : like < unLike}">
+  <div class="col-xs-12">
+    <h3>{{ title }}</h3>
+    <div>
+      {{ content }}
+      <p>{{ date }}</p>
+      <p>{{ like }}</p>
+      <p>{{ unLike }}</p>
+      <button (click)="likeIt(true)">Love it!</button><button (click)="likeIt(false)">Love it!</button>
+    </div>
+  </div>
+</div>
+

@@ -7,9 +7,20 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PostListComponentComponent implements OnInit {
   @Input() title:string;
+  @Input() content:string;
+  @Input() date;
+  @Input() like = 0;
+  @Input() unLike = 0;
+
   constructor() { }
 
   ngOnInit() {
   }
-
+  likeIt(value){
+    if( value === true)
+    this.like = this.like+1;
+    if( value === false)
+      this.unLike = this.unLike+1;
+    console.log(this.like);
+  }
 }
