@@ -6,21 +6,23 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./post-list-component.component.scss']
 })
 export class PostListComponentComponent implements OnInit {
-  @Input() title:string;
-  @Input() content:string;
-  @Input() date;
+  @Input() title: string;
+  @Input() content: string;
+  @Input() dateCreate ;
   @Input() like = 0;
-  @Input() unLike = 0;
 
-  constructor() { }
+  constructor() {
+      this.dateCreate = new Date();
+
+  }
 
   ngOnInit() {
   }
-  likeIt(value){
-    if( value === true)
+  likeIt(value) {
+    if ( value === true )
     this.like = this.like+1;
-    if( value === false)
-      this.unLike = this.unLike+1;
-    console.log(this.like);
+    if ( value === false )
+      this.like = this.like-1;
+    console.log( this.like );
   }
 }
