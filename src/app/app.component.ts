@@ -8,17 +8,24 @@ import { Component } from '@angular/core';
 export class AppComponent {
   posts = [
     {
-      title: 'titre test',
-      content: 'lorem ipsum',
+      title: 'Mon premier post',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       loveIts: '',
       created_at: ''
     },
     {
-      title: 'titre test2',
-      content: 'lorem ipsum',
+      title: 'Mon deuxième post',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       loveIts: '',
       created_at: ''
     }
+      ,
+      {
+          title: 'Mon troisième post',
+          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          loveIts: '',
+          created_at: ''
+      }
   ];
     constructor() {
     }
